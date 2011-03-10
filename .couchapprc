@@ -2,6 +2,9 @@
     "env": {
       "default": {
         "db": "http://admin:localpass@localhost/shallownews"
+      }, 
+      "staging": {
+        "db": "http://cushman:cloudman@cushman.cloudant.com/shallownews"
       }
     }
 }

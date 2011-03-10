@@ -6,19 +6,37 @@
   </head>
   <body>
     <div id="account"></div>
+    <div id="header">
+        <h1>Shallow News</h1>
+        <h2>Broaden Your World</h2>
+        
+        <h3>Shallow News brings you everything you need to know about the things you don't need to know. It's cultural awareness in five minutes a day.</h3>
+    </div>
 
-    <h1>Shallow News</h1>
-    <h2>Broaden Your World</h2>
-    <h3>Shallow News brings you everything you need to know about the things you don't need to know. It's cultural awareness in five minutes a day.</h3>
-
+    Personalize your news:
     <div id="feeds">
         
     </div>
 
-    <div id="signup">
-      <p>Edit welcome message.</p>
-      <p>Ideas: You could easily turn this into a photo sharing app, or a grocery list, or a chat room.</p>
+    <div id="subscribe">
+    </div>
+    
+    <div id="key">
+        Key:
+        <p><input type="radio" class="throttle-normal"/>: The most important thing that happened today. Cultural awareness in five minutes a day.
+        <p><input type="radio" class="throttle-full"/>: 2-3 stories a day. Be well-informed.
+        <p><input type="radio" class="throttle-less"/>: 1 or 2 stories a week. Just the highlights.
+        <p><input type="radio" class="throttle-none"/>: 1 or 2 stories a year. World changing events only.
     </div>
   </body>
   <script src="vendor/couchapp/loader.js"></script>
+  
+  <script src="js/lib/underscore-min.js" type="text/javascript"></script>
+  <script src="js/lib/backbone.js" type="text/javascript"></script>
+  
+  <script src="js/lib/backbone-couchdb.js" type="text/javascript"></script>
+  
+  <script src="js/lib/jquery.cookie.js" type="text/javascript"></script>
+  
+  <script src="js/main.js" type="text/javascript"></script>
 </html>
