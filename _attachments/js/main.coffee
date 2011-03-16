@@ -116,6 +116,7 @@ Collections.Feeds = Backbone.Collection.extend
 Views.Feed = Backbone.View.extend
 	initialize:->
 		@el = $("<div class='feed' />")
+		@el.addClass @model.get 'title'
 		@model.bind 'change', _(@render).bind(@)
 		
 		@model.items.bind 'refresh', (items)=>
